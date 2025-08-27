@@ -1,0 +1,75 @@
+body {
+    margin: 50px;
+    padding: 50px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to top,#e69ca8, #add8e6); /* rosa claro a azul claro */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #5b8084;
+}
+
+/* Contenedor del formulario */
+.login-container {
+     background: linear-gradient(to top, #e69ca8, #add8e6); 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 40px 33px rgba(44, 68, 46, 0.2);
+    width: 300px;
+align-items:baseline;
+
+
+}
+
+/* Título */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+     color: #5b8084;
+}
+
+#usuario{
+    background-color: transparent;
+    border-radius: 20px;
+  border: 2px solid #654d5f;    
+
+}
+#contraseña{
+    background-color: transparent;
+    border-radius: 20px;    
+     border: 2px solid #654d5f;
+    
+     }
+#ingresar{
+     background-color:transparent;
+    color:rgb(161, 73, 157);
+    padding: 10px;
+    border-radius: 120px;
+  border: 2px solid #654d5f;    
+        color: #4c6969
+   
+}
+#registrarse{
+
+ color: #222;
+  background-color: transparent;
+  border: 2px solid #654d5f;
+    padding: 10px;
+  border-radius: 120px;
+  color: #4c5759;
+}
+
+.login-container {
+    color: #7d068a;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+   
+}
+
+
