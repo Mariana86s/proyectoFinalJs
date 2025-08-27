@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Solicitud de Permiso</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>hola</h1>
+
+    <div class="formulario">
+        
+        <form class="datos-usuario">
+
+         <h1>Realizar Consulta</h1> 
+
+         <p>Usuario:</p>
+         <input type="text" placeholder="Escriba su ID de usuario">
+
+         <p>Sede:</p>
+         <input type="text" placeholder="Sede de donde consulta">
+
+         <p>Fecha de la Consulta:</p>
+         <input type="date">
+
+         <p>Ingrese el Código de su Computadora:</p>
+         <input type="number"><br><br>
+
+         <label>
+            <input type="checkbox">
+            Acepto los Términos y Condiciones
+         </label><br><br>
+
+         <button type="submit">Solicitar</button>
+
+        </form>
+    
+    </div>
+
+
+
+<script type="module" src="../pages/funcionamiento.js"></script>
 </body>
 </html>
