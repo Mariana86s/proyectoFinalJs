@@ -11,6 +11,12 @@
             "nombre": "Mariana",
             "password": "abcd",
             "rol": "admin"
+        },
+        {
+            "id": 03,
+            "nombre": "Taylor",
+            "password": "2005",
+            "rol": "estudiante"
         }
     ],
     "consultas": [],
