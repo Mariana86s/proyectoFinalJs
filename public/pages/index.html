@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Solicitud de Permiso</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
 
     <div class="formulario">
-        
-        <form class="datos-usuario">
 
-         <h1>Realizar Consulta</h1> 
+        <form class="datos-usuario" id="formulario">
 
-         <p>Usuario:</p>
-         <input type="text" placeholder="Escriba su ID de usuario">
-<br>
+            <h1>Realizar Consulta</h1>
 
-         <p>Sede:</p>
-         <input type="text" placeholder="Sede de donde consulta">
-<br>
-         <p>Fecha de la Consulta:</p>
-         <input type="date">
+            <p>Usuario:</p>
+            <input id="nombreUsuario" type="text" placeholder="Escriba su ID de usuario">
+            <br>
 
-         <p>Ingrese el Código de su Computadora:</p>
-         <input type="number"><br><br>
+            <p>Sede:</p>
+            <input type="text" placeholder="Sede de donde consulta" id="sedeUsuario">
+            <br>
+            <p>Fecha de la Consulta:</p>
+            <input type="date" id="fechaConsulta">
 
-         <details>
-            <summary>Ver Términos y Condiciones</summary><br>
-            <strong>Términos y Condiciones</strong>
-            <p>
-                Aquí van los términos y condiciones de uso. Puedes personalizar este texto según tus necesidades.
-            </p>
-         </details>
-         <br>
+            <p>Ingrese el Código de su Computadora:</p>
+            <input type="number" id="codigoCompu"><br><br>
 
-         <label>
-            <input type="checkbox">
-            Acepto los Términos y Condiciones
-         </label><br><br>
+            <details>
+                <summary>Ver Términos y Condiciones</summary><br>
+                <strong>Términos y Condiciones</strong>
+                <p>
+                    Aquí van los términos y condiciones de uso. Puedes personalizar este texto según tus necesidades.
+                </p>
+            </details>
+            <br>
 
-         <button type="submit">Solicitar</button>
+            <label>
+                <input type="checkbox">
+                Acepto los Términos y Condiciones
+            </label><br><br>
+
+            <button type="button" id="btnSolicitar">Solicitar</button>
 
         </form>
-    
+
     </div>
 
-<script type="module" src="../js/funcionamiento.js"></script>
+    <script type="module" src="../js/funcionamiento.js"></script>
 </body>
+
 </html>

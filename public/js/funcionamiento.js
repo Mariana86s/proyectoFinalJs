@@ -1,14 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const formulario = document.querySelector('.datos-usuario');
-
-    formulario.addEventListener('submit', function(event) {
-        event.preventDefault(); 
-
-        const usuario = formulario.querySelector('.usuario').value;
-        const sede = formulario.querySelector('input[placeholder="Sede de donde consulta"]').value;
-        const fecha = formulario.querySelector('input[type="date"]').value;
-        const codigo = formulario.querySelector('input[type="number"]').value;
-        const terminos = formulario.querySelector('input[type="checkbox"]').checked;
+import { postData } from "../services/fetch.js";
+btnSolicitar.addEventListener('click', function() {
+         const formulario = document.getElementById('formulario');
+        const usuario = document.getElementById('nombreUsuario').value;
+        const sede = document.getElementById('sedeUsuario').value;
+        const fecha = document.getElementById('fechaConsulta').value;
+        const codigo = document.getElementById('codigoCompu').value;
+        // const terminos = document.getElementById('input[type="checkbox"]').checked;
 
         if (!usuario || !sede || !fecha || !codigo) {
             alert('Por favor, completa todos los campos.');
@@ -21,5 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         alert('Formulario enviado correctamente (sin backend).');
         formulario.reset();
-    });
+
+
+        /*
+            Crear un obj que se llame solicitud,
+            Este obj tiene que tener las mismas propiedades que valores
+
+            usuario: usuario
+
+            creeas una variable que sea igual al await del postData
+        */
+       const solicitud = {
+        usuario:usuario,
+       }
 });
