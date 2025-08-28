@@ -13,7 +13,7 @@
             "rol": "admin"
         },
         {
-            "id": 03,
+            "id": 3,
             "nombre": "Taylor",
             "password": "2005",
             "rol": "estudiante"
