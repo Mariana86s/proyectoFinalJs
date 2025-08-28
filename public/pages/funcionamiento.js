@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        alert('Formulario enviado correctamente (sin backend).');
+        alert('Formulario enviado correctamente.');
         formulario.reset();
     });
 });
