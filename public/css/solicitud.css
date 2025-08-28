@@ -1,9 +1,9 @@
-body{
-    background-color: darkgrey;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+  background-color: darkgrey;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.formulario{
+.formulario {
   background-color: lightgrey;
   width: 250px;
   border: 10px solid black;
@@ -16,6 +16,6 @@ body{
   background: linear-gradient(to top, #FFC0CB, #ADD8E6);
 }
 
-.usuario{
+.usuario {
   border-radius: 15px;
 }
