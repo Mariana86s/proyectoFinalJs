@@ -1,0 +1,26 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Adrian",
+            "password": "1234",
+            "rol": "estudiante"
+        },
+        {
+            "id": 2,
+            "nombre": "Mariana",
+            "password": "abcd",
+            "rol": "admin"
+        }
+    ],
+    "consultas": [],
+    "historial": [
+        {
+            "id": 1,
+            "usuario": 1,
+            "consulta": "no me funciona la laptop",
+            "hora": "03.30",
+            "estado": "pendiente"
+        }
+    ]
+}
