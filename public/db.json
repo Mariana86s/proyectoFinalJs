@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "usuarios": [
     {
       "id": "1",
@@ -12,54 +11,37 @@
       "nombre": "Mariana",
       "password": "abcd",
       "rol": "admin"
+    },
+    {
+      "id": "3",
+      "nombre": "Taylor",
+      "password": "2005",
+      "rol": "estudiante"
+    },
+    {
+      "id": "d365",
+      "sede": "San José",
+      "nacimiento": "2025-08-29",
+      "telefono": "911",
+      "nombre": "arroz",
+      "contraseña": "1234",
+      "usuario": "Pepe"
     }
   ],
   "consultas": [
     {
-      "id": "ff1a",
-      "usuario": "Mari",
+      "id": "4b29",
+      "usuario": "23234",
       "sede": "dfghjk",
-      "fecha": "2025-08-28",
-      "codigo": "1111"
+      "fecha": "2025-08-29",
+      "codigo": "911"
     },
     {
-      "id": "042a",
-      "usuario": "SOL",
-      "sede": "dfghjk",
-      "fecha": "11111-11-11",
-      "codigo": "123456789"
+      "id": "49bd",
+      "usuario": "Marii ",
+      "sede": "TODAS",
+      "fecha": "2007-03-06",
+      "codigo": "1112"
     }
   ]
-=======
-    "usuarios": [
-        {
-            "id": 1,
-            "nombre": "Adrian",
-            "password": "1234",
-            "rol": "estudiante"
-        },
-        {
-            "id": 2,
-            "nombre": "Mariana",
-            "password": "abcd",
-            "rol": "admin"
-        },
-        {
-            "id": 3,
-            "nombre": "Taylor",
-            "password": "2005",
-            "rol": "estudiante"
-        }
-    ],
-    "consultas": [],
-    "historial": [
-        {
-            "id": 1,
-            "usuario": 1,
-            "consulta": "no me funciona la laptop",
-            "hora": "03.30",
-            "estado": "pendiente"
-        }
-    ]
->>>>>>> 415b841c448a7987e495eec0909493d481383491
 }
