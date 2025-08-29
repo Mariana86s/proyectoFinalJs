@@ -15,3 +15,4 @@ async function postData(obj,endpoint) {
    }
 }
 export {postData}
+const nombreCompleto = document.getElementById("nombre")
