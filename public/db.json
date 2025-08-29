@@ -42,6 +42,13 @@
       "sede": "TODAS",
       "fecha": "2007-03-06",
       "codigo": "1112"
+    },
+    {
+      "id": "1b1f",
+      "usuario": "prueba",
+      "sede": "prueba",
+      "fecha": "2025-08-29",
+      "codigo": "1111"
     }
   ]
 }
