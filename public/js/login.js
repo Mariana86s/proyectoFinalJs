@@ -7,7 +7,7 @@ btnIngresar.addEventListener("click", () => {
   const contraseña = inputContraseña.value.trim();
 
   if (usuario === "" || contraseña === "") {
-    alert("Por favor, completa todos los campos.");
+    alert("Por favor, completa todos los campos :)");
     return;
   }
 
