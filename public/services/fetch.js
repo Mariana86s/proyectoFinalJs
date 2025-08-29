@@ -14,6 +14,7 @@ async function postData(obj,endpoint) {
     console.error(error);
    }
 }
+<<<<<<< HEAD
 async function getData(endpoint) {
    try {
      const peticion = await fetch(`http://localhost:3001/${endpoint}`,{
@@ -30,3 +31,7 @@ async function getData(endpoint) {
    }
 }
 export {getData}
+=======
+export {postData}
+const nombreCompleto = document.getElementById("nombre")
+>>>>>>> 415b841c448a7987e495eec0909493d481383491

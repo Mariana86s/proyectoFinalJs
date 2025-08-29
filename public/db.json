@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "usuarios": [
     {
       "id": "1",
@@ -29,4 +30,36 @@
       "codigo": "123456789"
     }
   ]
+=======
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Adrian",
+            "password": "1234",
+            "rol": "estudiante"
+        },
+        {
+            "id": 2,
+            "nombre": "Mariana",
+            "password": "abcd",
+            "rol": "admin"
+        },
+        {
+            "id": 3,
+            "nombre": "Taylor",
+            "password": "2005",
+            "rol": "estudiante"
+        }
+    ],
+    "consultas": [],
+    "historial": [
+        {
+            "id": 1,
+            "usuario": 1,
+            "consulta": "no me funciona la laptop",
+            "hora": "03.30",
+            "estado": "pendiente"
+        }
+    ]
+>>>>>>> 415b841c448a7987e495eec0909493d481383491
 }
