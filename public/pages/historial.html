@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historial</title>
-    <link rel="stylesheet" href="../styles/historial.css">
+    <link rel="stylesheet" href="../css/historial.css">
 </head>
 
 <body>
-    <h1>Historial de Solicitudes</h1>
-    
-    <table>
+    <h1 id="historial">Historial de Solicitudes</h1>
+    <div id="consultas">
+        
+    </div>
+    <table id="tablaHistorial">
         <tr>
             <th>ID</th>
             <th>Usuario</th>
@@ -19,21 +21,21 @@
             <th>Hora</th>
             <th>Estado</th>
         </tr>
-        <tr>
+        <tr id="fila1">
             <td>1</td>
-            <td>Samantha</td>
+            <td id="usuario1">Samantha</td>
             <td>No me funciona la laptop</td>
             <td>03:30</td>
             <td>Pendiente</td>
         </tr>
-        <tr>
+        <tr id="fila2">
             <td>2</td>
-            <td>Pepito</td>
+            <td id="usuario2">Pepito</td>
             <td>Quiero acceso al software </td>
             <td>09:35</td>
             <td>Atendido</td>
         </tr>
     </table>
-    <script src="../js/historial.js"></script>
+    <script type="module" src="../js/historial.js"></script>
 </body>
 </html>
