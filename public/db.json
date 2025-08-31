@@ -42,6 +42,13 @@
       "sede": "TODAS",
       "fecha": "2007-03-06",
       "codigo": "1112"
+    },
+    {
+      "id": "fe62",
+      "usuario": "pepito",
+      "sede": "costa rica",
+      "fecha": "2025-08-30",
+      "codigo": "827892"
     }
   ]
 }

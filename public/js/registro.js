@@ -15,11 +15,14 @@ btnIngresar.addEventListener("click", async function () {
         nacimiento: nacimiento.value,
         telefono: telefono.value,
         nombre:nombreCompleto.value,
-        contraseña: contraseña.value,
+        password:contraseña.value,
         usuario: nombreUsuario.value
-        
+
     };
-    const peticion = await postData(usuario,"usuarios");
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    usuarios.push(usuario);
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    alert("Usuario registrado correctamente ✅");
 });
 
 

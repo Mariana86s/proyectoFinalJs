@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const formulario = document.querySelector('.datos-usuario');
 
-    formulario.addEventListener('submit', function(event) {
-        event.preventDefault(); 
+    formulario.addEventListener('submit', function (event) {
+        event.preventDefault();
 
         const usuario = formulario.querySelector('.usuario').value;
         const sede = formulario.querySelector('input[placeholder="Sede de donde consulta"]').value;
@@ -21,5 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         alert('Formulario enviado correctamente.');
         formulario.reset();
+        let solicitudesGuardadas = JSON.parse(localStorage.getItem("solicitudes")) || [];
+        solicitudesGuardadas.push(solicitudes);
+        localStorage.setItem("solicitudes", JSON.stringify(solicitudesGuardadas));
+        console.log("Solicitud guardada en localStorage:", solicitudes);
     });
 });

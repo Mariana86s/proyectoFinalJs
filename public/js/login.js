@@ -10,10 +10,17 @@ btnIngresar.addEventListener("click", () => {
     alert("Por favor, completa todos los campos :)");
     return;
   }
-
   if (usuario === "admin" && contraseña === "1234") {
     alert("¡Bienvenida, Francella! Acceso concedido.");
   } else {
-    alert("Usuario o contraseña incorrectos.");
+const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+ const encontrado = usuarios.find(u => u.usuario === usuario && u.password === contraseña);
+    if (encontrado) {
+        alert("¡Bienvenido, " + encontrado.nombre + "! Acceso concedido.");
+        localStorage.setItem("usuarioActivo", JSON.stringify(encontrado)); 
+    } else {
+        alert("Usuario o contraseña incorrectos.");
+    }
+
   }
 });
