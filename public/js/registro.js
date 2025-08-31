@@ -25,4 +25,6 @@ btnIngresar.addEventListener("click", function () {
     alert("Usuario registrado correctamente (guardado en tu navegador).");
 
     document.getElementById("formRegistro").reset();
+
+    window.location.href = "login.html";
 });
