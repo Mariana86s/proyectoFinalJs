@@ -48,13 +48,6 @@
   ],
   "consultas": [
     {
-      "id": "4b29",
-      "usuario": "23234",
-      "sede": "dfghjk",
-      "fecha": "2025-08-29",
-      "codigo": "911"
-    },
-    {
       "id": "49bd",
       "usuario": "Marii ",
       "sede": "TODAS",
@@ -67,6 +60,13 @@
       "sede": "costa rica",
       "fecha": "2025-08-30",
       "codigo": "827892"
+    },
+    {
+      "id": "ee24",
+      "usuario": "1132121212",
+      "sede": "3133",
+      "fecha": "2025-09-01",
+      "codigo": "21d"
     }
   ]
 }

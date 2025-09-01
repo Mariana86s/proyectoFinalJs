@@ -33,7 +33,7 @@ async function mostrarHistorial() {
     btnEliminar.textContent = "Eliminar"
     btnEliminar.addEventListener("click", async () => {
       await eliminarEntrada(item.id)
-      mostrarHistorial() // 🔄 Actualiza la tabla sin borrar el encabezado
+      mostrarHistorial() // 
     })
 
     tdAcciones.appendChild(btnEditar)
@@ -55,3 +55,4 @@ mostrarHistorial()
 async function eliminarEntrada(id) {
   await deleteData("consultas", id)
 }
+
