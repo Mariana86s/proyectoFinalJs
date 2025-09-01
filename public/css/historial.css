@@ -35,7 +35,7 @@ tr:hover{
 }
 button{
     background:#e89dfd;
-    gap: 10px;
+    margin-left: 50px; 
     color:#fff;
     padding:8px 14px;
     border:none;
@@ -43,7 +43,6 @@ button{
     cursor:pointer
 }
 button:hover{
-    gap;
     background:#e89dfd;
 }
 input,textarea{

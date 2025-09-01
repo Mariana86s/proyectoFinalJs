@@ -5,7 +5,6 @@ const inputUsuario = document.getElementById("usuario");
 const inputContraseña = document.getElementById("contraseña");
 
 btnIngresar.addEventListener("click", async (e) => {
-  e.preventDefault();
   const usuario = inputUsuario.value.trim();
   const contraseña = inputContraseña.value.trim();
   const usuarios = await getData("usuarios");
@@ -14,5 +13,4 @@ btnIngresar.addEventListener("click", async (e) => {
     alert("Usuario no registrado");
     return; 
   }
-  window.location.href = "../pages/solicitud.html";
 });

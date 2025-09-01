@@ -1,6 +1,4 @@
 import { postData } from "../services/fetch.js"
-
-
 const sede = document.getElementById("sede")
 const nacimiento = document.getElementById("nacimiento")
 const telefono = document.getElementById("telefono")
@@ -22,6 +20,7 @@ btnIngresar.addEventListener("click", async function () {
     const peticion = await postData(usuario,"usuarios")
     console.log(peticion);
     alert("Usuario registrado correctamente ✅");
+    window.location.href = "../pages/login.html";
 });
 
 

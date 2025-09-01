@@ -1,4 +1,4 @@
-import { getData } from "../services/fetch.js"
+import { deleteData, getData } from "../services/fetch.js"
 
 const tablaHistorial = document.getElementById("tablaHistorial")
 
@@ -21,14 +21,14 @@ async function mostrarHistorial() {
         tdSede.textContent = historialDatos[i].sede
         tdFecha.textContent = historialDatos[i].fecha
         tdCodigo.textContent = historialDatos[i].codigo 
-        tdEditar.textContent = "Editar"
+        tdEditar.textContent = "Aprobar"
         tdEliminar.textContent = "Eliminar"
 
 
         tdEliminar.addEventListener("click",async function() {
-        tr.remove();
+            const peticion = await deleteData("consultas",historialDatos[i].id)
         })
-
+        
         tr.appendChild(tdId)
         tr.appendChild(tdUsuario)
         tr.appendChild(tdSede)

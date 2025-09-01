@@ -1,24 +1,6 @@
 {
   "usuarios": [
     {
-      "id": "1",
-      "nombre": "Adrian",
-      "password": "1234",
-      "rol": "estudiante"
-    },
-    {
-      "id": "2",
-      "nombre": "Mariana",
-      "password": "abcd",
-      "rol": "admin"
-    },
-    {
-      "id": "3",
-      "nombre": "Taylor",
-      "password": "2005",
-      "rol": "estudiante"
-    },
-    {
       "id": "d365",
       "sede": "San José",
       "nacimiento": "2025-08-29",
@@ -44,36 +26,52 @@
       "nombre": "tay",
       "password": "1234",
       "usuario": "tay02"
+    },
+    {
+      "id": "4162",
+      "sede": "",
+      "nacimiento": "",
+      "telefono": "",
+      "nombre": "",
+      "password": "",
+      "usuario": ""
+    },
+    {
+      "id": "ae70",
+      "sede": "la capri",
+      "nacimiento": "2025-09-01",
+      "telefono": "2673838",
+      "nombre": "samii",
+      "password": "1223367",
+      "usuario": "samiii"
+    },
+    {
+      "id": "8a4e",
+      "sede": "la capri",
+      "nacimiento": "2025-09-01",
+      "telefono": "97787768",
+      "nombre": "samii",
+      "password": "1234",
+      "usuario": "samiii"
+    },
+    {
+      "id": "a267",
+      "sede": "la capri",
+      "nacimiento": "2025-09-01",
+      "telefono": "6789898",
+      "nombre": "samii",
+      "password": "76ghjk",
+      "usuario": "samiii"
+    },
+    {
+      "id": "4edb",
+      "sede": "la capri",
+      "nacimiento": "2025-09-01",
+      "telefono": "45678",
+      "nombre": "samii",
+      "password": "1234",
+      "usuario": "arroz"
     }
   ],
-  "consultas": [
-    {
-      "id": "4b29",
-      "usuario": "23234",
-      "sede": "dfghjk",
-      "fecha": "2025-08-29",
-      "codigo": "911"
-    },
-    {
-      "id": "49bd",
-      "usuario": "Marii ",
-      "sede": "TODAS",
-      "fecha": "2007-03-06",
-      "codigo": "1112"
-    },
-    {
-      "id": "fe62",
-      "usuario": "pepito",
-      "sede": "costa rica",
-      "fecha": "2025-08-30",
-      "codigo": "827892"
-    },
-    {
-      "id": "c03a",
-      "usuario": "mari",
-      "sede": "costa rica",
-      "fecha": "2025-09-01",
-      "codigo": "45gsh2"
-    }
-  ]
+  "consultas": []
 }
