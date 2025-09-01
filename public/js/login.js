@@ -30,6 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     alert("usuario iniciado");
-    window.location.href = "pagina-principal.html"; // Ajusta según tu estructura
+    window.location.href = "solicitud.html"; // Ajusta según tu estructura
   });
 });
