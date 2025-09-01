@@ -5,6 +5,7 @@ btnSolicitar.addEventListener('click', async function () {
     const sede = document.getElementById('sedeUsuario').value;
     const fecha = document.getElementById('fechaConsulta').value;
     const codigo = document.getElementById('codigoCompu').value;
+    const consulta = document.getElementById('consulta').value;
     const terminos = document.querySelector('input[type="checkbox"]').checked;
 
     if (!usuario || !sede || !fecha || !codigo) {
@@ -21,7 +22,10 @@ btnSolicitar.addEventListener('click', async function () {
         usuario: usuario,
         sede: sede,
         fecha: fecha,
-        codigo: codigo
+        codigo: codigo,
+        consulta:consulta,
+        hora: "",
+        estado: "Pendiente"
     }
     const endpoint = "consultas";
     const peticion = await postData(solicitudes, endpoint);

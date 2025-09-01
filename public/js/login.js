@@ -5,6 +5,7 @@ const inputUsuario = document.getElementById("usuario");
 const inputContraseña = document.getElementById("contraseña");
 
 btnIngresar.addEventListener("click", async (e) => {
+  e.preventDefault(); // Evita el comportamiento por defecto
 
   const usuario = inputUsuario.value.trim();
   const contraseña = inputContraseña.value.trim();
@@ -17,8 +18,9 @@ btnIngresar.addEventListener("click", async (e) => {
   try {
     const usuarios = await getData("usuarios");
 
+    // Busca por usuario y password (no por nombre y contraseña)
     const encontrado = usuarios.find(
-      (u) => u.usuario === usuario && u.contraseña === contraseña
+      (u) => u.usuario === usuario && u.password === contraseña
     );
 
     if (!encontrado) {
