@@ -15,7 +15,6 @@ btnIngresar.addEventListener("click", async() => {
   }
   if (usuarioEncontrado) {
     alert("usuario iniciado")
-    // redirección a la otra página usando window.location.href
     
   }
 });
