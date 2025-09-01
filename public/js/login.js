@@ -19,7 +19,7 @@ btnIngresar.addEventListener("click", async (e) => {
     const usuarios = await getData("usuarios");
 
     const encontrado = usuarios.find(
-      (u) => u.usuario === usuario && u.contraseña === contraseña
+      (u) => u.nombre === usuario && u.contraseña === contraseña
     );
 
     if (!encontrado) {
