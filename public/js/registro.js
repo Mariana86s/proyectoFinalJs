@@ -19,9 +19,8 @@ btnIngresar.addEventListener("click", async function () {
         usuario: nombreUsuario.value
 
     };
-    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-    usuarios.push(usuario);
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    const peticion = await postData(usuario,"usuarios")
+    console.log(peticion);
     alert("Usuario registrado correctamente ✅");
 });
 

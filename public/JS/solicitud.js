@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Formulario enviado correctamente.');
         formulario.reset();
         let solicitudesGuardadas = JSON.parse(localStorage.getItem("solicitudes")) || [];
+        const solicitudes = { usuario, sede, fecha, codigo };
         solicitudesGuardadas.push(solicitudes);
         localStorage.setItem("solicitudes", JSON.stringify(solicitudesGuardadas));
         console.log("Solicitud guardada en localStorage:", solicitudes);
