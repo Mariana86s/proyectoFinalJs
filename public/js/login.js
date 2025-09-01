@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
     localStorage.setItem('usuarios', JSON.stringify(usuariosDemo));
   }
-<<<<<<< HEAD
 
   btnIngresar.addEventListener("click", (e) => {
     e.preventDefault(); // Si está dentro de un form
@@ -33,19 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
     alert("usuario iniciado");
     window.location.href = "solicitud.html"; // Ajusta según tu estructura
   });
-=======
-  if (usuario === "admin" && contraseña === "1234") {
-    alert("¡Bienvenida, Francella! Acceso concedido.");
-  } else {
-const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
- const encontrado = usuarios.find(u => u.usuario === usuario && u.password === contraseña);
-    if (encontrado) {
-        alert("¡Bienvenido, " + encontrado.nombre + "! Acceso concedido.");
-        localStorage.setItem("usuarioActivo", JSON.stringify(encontrado)); 
-    } else {
-        alert("Usuario o contraseña incorrectos.");
-    }
-
-  }
->>>>>>> 5a5ee9d5a9e7cfbd0d775b81fc758dc136accee1
 });
