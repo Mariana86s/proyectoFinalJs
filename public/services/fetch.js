@@ -44,6 +44,28 @@ async function postData(obj, endpoint) {
     throw error;
   }
 }
+async function patchData(obj, endpoint,id) {
+  try {
+    const response = await fetch(`${BASE_URL}/${endpoint}/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(obj)
+    });
+
+    if (!response.ok) {
+      throw new Error(`POST ${endpoint} falló con estado ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error(`Error en postData: ${error.message}`);
+    throw error;
+  }
+}
 
 async function deleteData(endpoint, id) {
   try {
@@ -67,4 +89,4 @@ async function deleteData(endpoint, id) {
   }
 }
 
-export { getData, postData, deleteData };
+export { getData, postData, deleteData,patchData };

@@ -1,0 +1,96 @@
+{
+  "usuarios": [
+    {
+      "id": "d365",
+      "sede": "San José",
+      "nacimiento": "2025-08-29",
+      "telefono": "911",
+      "nombre": "arroz",
+      "contraseña": "1234",
+      "usuario": "Pepe"
+    },
+    {
+      "id": "c4aa",
+      "sede": "sdhgfhj",
+      "nacimiento": "2025-09-01",
+      "telefono": "911",
+      "nombre": "arroz",
+      "password": "1234",
+      "usuario": "rdfgvmb"
+    },
+    {
+      "id": "b724",
+      "sede": "la capri",
+      "nacimiento": "2005-07-08",
+      "telefono": "64149029",
+      "nombre": "tay",
+      "password": "1234",
+      "usuario": "tay02"
+    },
+    {
+      "id": "4162",
+      "sede": "",
+      "nacimiento": "",
+      "telefono": "",
+      "nombre": "",
+      "password": "",
+      "usuario": ""
+    },
+    {
+      "id": "ae70",
+      "sede": "la capri",
+      "nacimiento": "2025-09-01",
+      "telefono": "2673838",
+      "nombre": "samii",
+      "password": "1223367",
+      "usuario": "samiii"
+    },
+    {
+      "id": "8a4e",
+      "sede": "la capri",
+      "nacimiento": "2025-09-01",
+      "telefono": "97787768",
+      "nombre": "samii",
+      "password": "1234",
+      "usuario": "samiii"
+    },
+    {
+      "id": "a267",
+      "sede": "la capri",
+      "nacimiento": "2025-09-01",
+      "telefono": "6789898",
+      "nombre": "samii",
+      "password": "76ghjk",
+      "usuario": "samiii"
+    },
+    {
+      "id": "4edb",
+      "sede": "la capri",
+      "nacimiento": "2025-09-01",
+      "telefono": "45678",
+      "nombre": "samii",
+      "password": "1234",
+      "usuario": "arroz"
+    }
+  ],
+  "consultas": [
+    {
+      "id": "068e",
+      "usuario": "prueba",
+      "sede": "prueba sede",
+      "fecha": "2025-09-01",
+      "codigo": "911",
+      "consulta": "prueba consulta"
+    },
+    {
+      "id": "c3eb",
+      "usuario": "usuario consulta",
+      "sede": "sede consulta",
+      "fecha": "2010-10-10",
+      "codigo": "codigo",
+      "consulta": "consulta",
+      "hora": "",
+      "estado": "aprobada"
+    }
+  ]
+}
