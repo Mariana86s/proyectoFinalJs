@@ -44,11 +44,19 @@
       "codigo": "1112"
     },
     {
+<<<<<<< HEAD
       "id": "1b1f",
       "usuario": "prueba",
       "sede": "prueba",
       "fecha": "2025-08-29",
       "codigo": "1111"
+=======
+      "id": "fe62",
+      "usuario": "pepito",
+      "sede": "costa rica",
+      "fecha": "2025-08-30",
+      "codigo": "827892"
+>>>>>>> 5a5ee9d5a9e7cfbd0d775b81fc758dc136accee1
     }
   ]
 }

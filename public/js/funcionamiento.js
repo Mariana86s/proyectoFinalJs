@@ -26,4 +26,9 @@ btnSolicitar.addEventListener('click', async function () {
     const endpoint = "consultas";
     const peticion = await postData(solicitudes, endpoint);
     console.log(peticion);
+ 
+    let solicitudesGuardadas = JSON.parse(localStorage.getItem("solicitudes")) || [];
+        solicitudesGuardadas.push(solicitudes);
+    localStorage.setItem("solicitudes", JSON.stringify(solicitudesGuardadas));
+    console.log("Solicitud guardada en localStorage:", solicitudes);
 });
