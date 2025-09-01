@@ -1,35 +1,36 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const btnIngresar = document.getElementById("ingresar");
-  const inputUsuario = document.getElementById("usuario");
-  const inputContraseña = document.getElementById("contraseña");
+import { getData } from "../services/fetch.js";
 
-  // Solo para pruebas: inicializa usuarios si no existen
-  if (!localStorage.getItem('usuarios')) {
-    const usuariosDemo = [
-      { nombre: "juan", password: "123" },
-      { nombre: "maria", password: "abc" }
-    ];
-    localStorage.setItem('usuarios', JSON.stringify(usuariosDemo));
+const btnIngresar = document.getElementById("ingresar");
+const inputUsuario = document.getElementById("usuario");
+const inputContraseña = document.getElementById("contraseña");
+
+btnIngresar.addEventListener("click", async (e) => {
+  e.preventDefault();
+
+  const usuario = inputUsuario.value.trim();
+  const contraseña = inputContraseña.value.trim();
+
+  if (!usuario || !contraseña) {
+    alert("Por favor, completa ambos campos.");
+    return;
   }
 
-  btnIngresar.addEventListener("click", (e) => {
-    e.preventDefault(); // Si está dentro de un form
+  try {
+    const usuarios = await getData("usuarios");
 
-    const usuario = inputUsuario.value.trim();
-    const contraseña = inputContraseña.value.trim();
-
-    const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
-
-    const usuarioEncontrado = usuarios.find(u =>
-      u.nombre === usuario && u.password === contraseña
+    const encontrado = usuarios.find(
+      (u) => u.usuario === usuario && u.contraseña === contraseña
     );
 
-    if (!usuarioEncontrado) {
-      alert("usuario no encontrado");
+    if (!encontrado) {
+      alert("Usuario no registrado ❌");
       return;
     }
 
-    alert("usuario iniciado");
-    window.location.href = "solicitud.html"; // Ajusta según tu estructura
-  });
+    alert("Inicio de sesión exitoso ✅");
+    window.location.href = "../pages/solicitud.html";
+  } catch (error) {
+    console.error("Error al obtener los datos:", error);
+    alert("Hubo un problema al iniciar sesión. Intenta de nuevo más tarde.");
+  }
 });

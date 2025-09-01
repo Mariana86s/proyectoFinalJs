@@ -6,7 +6,7 @@ const nombreCompleto = document.getElementById("nombre");
 const contraseña = document.getElementById("contraseña");
 const btnIngresar = document.getElementById("btnIngresar");
 
-btnIngresar.addEventListener("click", function () {
+btnIngresar.addEventListener("click", async function () {
     const usuario = {
         sede: sede.value,
         nacimiento: nacimiento.value,
@@ -16,15 +16,12 @@ btnIngresar.addEventListener("click", function () {
         usuario: nombreUsuario.value
     };
 
-    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-    usuarios.push(usuario);
-
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
-    alert("Usuario registrado correctamente (guardado en tu navegador).");
-
-    document.getElementById("formRegistro").reset();
-
-    window.location.href = "login.html";
+    try {
+        const peticion = await postData(usuario, "usuarios");
+        console.log(peticion);
+        alert("Usuario registrado correctamente ✅");
+    } catch (error) {
+        console.error("Error al registrar el usuario:", error);
+        alert("Hubo un problema al registrar el usuario ❌");
+    }
 });
