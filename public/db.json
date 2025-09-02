@@ -59,9 +59,10 @@
       "sede": "la capri",
       "nacimiento": "2025-09-01",
       "telefono": "6789898",
-      "nombre": "samii",
-      "password": "76ghjk",
-      "usuario": "samiii"
+      "nombre": "Jeanca",
+      "password": "1234",
+      "usuario": "Jeanca",
+      "tipoUsuario": "admin"
     },
     {
       "id": "4edb",
@@ -91,6 +92,16 @@
       "consulta": "consulta",
       "hora": "",
       "estado": "aprobada"
+    },
+    {
+      "id": "9c54",
+      "usuario": "23234",
+      "sede": "la capri",
+      "fecha": "2025-09-02",
+      "codigo": "788",
+      "consulta": "tengo una duda",
+      "hora": "",
+      "estado": "rechazada"
     }
   ]
 }
